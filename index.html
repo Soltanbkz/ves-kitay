@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Весь Китай — Автозапчасти из Китая</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+       <img style="height: 70px;" src="image/logo.png" alt="Весь Китай">
+    </a>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#how">Как заказать</a>
+      <a href="#advantages">Преимущества</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://wa.me/77001234567" class="btn-messenger btn-wa" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <a href="https://t.me/vesykitay" class="btn-messenger btn-tg" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        Telegram
+      </a>
+      <span class="header-phone">+7 700 123-45-67</span>
+    </div>
+    <div class="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" onclick="toggleMenu()">О нас</a>
+  <a href="#how" onclick="toggleMenu()">Как заказать</a>
+  <a href="#advantages" onclick="toggleMenu()">Преимущества</a>
+  <a href="#reviews" onclick="toggleMenu()">Отзывы</a>
+  <a href="#contacts" onclick="toggleMenu()">Контакты</a>
+  <a href="https://wa.me/77001234567" style="color:#25D366" target="_blank">WhatsApp</a>
+  <a href="https://t.me/vesykitay" style="color:#229ED9" target="_blank">Telegram</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-lines"></div>
+  <div class="hero-bg-char">中</div>
+  <div class="hero-inner">
+    <div class="hero-badge">Прямые поставки из Китая</div>
+    <h1>Автозапчасти из Китая <br><em>дёшево, быстро,</em> надёжно</h1>
+    <p class="hero-sub">Прямые поставки. Широкий ассортимент. Гарантия качества на все позиции.</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/77001234567" class="btn-main" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Получить консультацию
+      </a>
+      <a href="#how" class="btn-outline">Как это работает →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">10<span>K+</span></div>
+        <div class="hero-stat-label">запчастей в наличии</div>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">7<span>+</span></div>
+        <div class="hero-stat-label">лет на рынке</div>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">-50<span>%</span></div>
+        <div class="hero-stat-label">ниже рыночных цен</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO ORDER -->
+<section id="how">
+  <div class="container">
+    <div class="section-label">Процесс</div>
+    <h2 style="color:#fff">Как сделать заказ</h2>
+    <p class="section-sub">Простая схема — от обращения до получения запчасти у вас в руках.</p>
+    <div class="steps fade-up">
+      <div class="step">
+        <span class="step-num">1</span>
+        <span class="step-icon">💬</span>
+        <h3>Напишите нам</h3>
+        <p>В WhatsApp или Telegram — удобным для вас способом</p>
+        <div class="step-arrow">›</div>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span class="step-icon">🔍</span>
+        <h3>Уточним детали</h3>
+        <p>Менеджер уточнит марку, модель автомобиля и VIN-номер</p>
+        <div class="step-arrow">›</div>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <span class="step-icon">📋</span>
+        <h3>Подберём и назовём цену</h3>
+        <p>Найдём нужную запчасть и озвучим стоимость</p>
+        <div class="step-arrow">›</div>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <span class="step-icon">💳</span>
+        <h3>Оплата</h3>
+        <p>Удобным способом: наличные, перевод, карта</p>
+        <div class="step-arrow">›</div>
+      </div>
+      <div class="step">
+        <span class="step-num">5</span>
+        <span class="step-icon">📦</span>
+        <h3>Получите заказ</h3>
+        <p>Доставка по всему Казахстану — быстро и надёжно</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-up">
+        <div class="section-label">О компании</div>
+        <h2>Работаем напрямую с поставщиками в Китае</h2>
+        <p style="color:var(--text2);font-size:15px;line-height:1.75;margin-bottom:28px">
+          «Весь Китай» — компания с опытом более 7 лет в сфере поставок автозапчастей из КНР. Мы сотрудничаем напрямую с проверенными производителями и поставщиками, исключая посредников и предлагая вам самые выгодные цены.
+        </p>
+        <p style="color:var(--text2);font-size:15px;line-height:1.75;margin-bottom:0">
+          В нашем каталоге — более 10 000 наименований запчастей для автомобилей всех марок. На все товары предоставляется гарантия качества.
+        </p>
+        <div class="about-facts">
+          <div class="about-fact">
+            <div class="about-fact-num">7+</div>
+            <div class="about-fact-label">лет опыта</div>
+          </div>
+          <div class="about-fact">
+            <div class="about-fact-num">10 000+</div>
+            <div class="about-fact-label">наименований</div>
+          </div>
+          <div class="about-fact">
+            <div class="about-fact-num">6 мес</div>
+            <div class="about-fact-label">гарантия</div>
+          </div>
+          <div class="about-fact">
+            <div class="about-fact-num">16+</div>
+            <div class="about-fact-label">городов доставки</div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="about-visual">
+          <div class="about-char">中</div>
+          <div class="about-badge">
+            <div class="about-badge-icon">🏭</div>
+            <div class="about-badge-text">
+              <strong>Прямые поставки</strong>
+              <span>Без посредников — напрямую с завода</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section id="advantages">
+  <div class="container">
+    <div class="section-label">Почему мы</div>
+    <h2>Наши преимущества</h2>
+    <p class="section-sub">Вот почему тысячи клиентов выбирают «Весь Китай».</p>
+    <div class="adv-grid fade-up">
+      <div class="adv-card">
+        <span class="adv-icon">💰</span>
+        <h3>Цены ниже рынка на 30–50%</h3>
+        <p>Прямые контракты с китайскими заводами позволяют нам держать минимальную наценку</p>
+      </div>
+      <div class="adv-card">
+        <span class="adv-icon">🚢</span>
+        <h3>Прямые поставки из Китая</h3>
+        <p>Без посредников и лишних наценок — товар идёт напрямую от производителя</p>
+      </div>
+      <div class="adv-card">
+        <span class="adv-icon">🛡️</span>
+        <h3>Гарантия 6 месяцев</h3>
+        <p>Мы уверены в качестве каждой запчасти и даём официальную гарантию</p>
+      </div>
+      <div class="adv-card">
+        <span class="adv-icon">🚚</span>
+        <h3>Доставка по всему Казахстану</h3>
+        <p>Отправляем во все крупные города — Алматы, Астана, Шымкент и другие</p>
+      </div>
+      <div class="adv-card">
+        <span class="adv-icon">🔎</span>
+        <h3>Подбор по VIN-номеру</h3>
+        <p>Подберём точную запчасть для вашего автомобиля — безошибочно</p>
+      </div>
+      <div class="adv-card">
+        <span class="adv-icon">📦</span>
+        <h3>Более 10 000 запчастей в наличии</h3>
+        <p>Огромный склад — большинство позиций уходят в отгрузку в тот же день</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="container">
+    <div class="section-label">Каталог</div>
+    <h2>Категории товаров</h2>
+    <p class="section-sub">Запчасти для любых марок и моделей — японские, корейские, европейские и китайские авто.</p>
+    <div class="cat-grid fade-up">
+      <div class="cat-card">
+        <div class="cat-icon">⚙️</div>
+        <h3>Двигатель</h3>
+        <p>Поршни, прокладки, ремни, цепи ГРМ</p>
+        <div class="cat-arrow">→</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🔩</div>
+        <h3>Ходовая</h3>
+        <p>Амортизаторы, рычаги, шаровые, ступицы</p>
+        <div class="cat-arrow">→</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🚗</div>
+        <h3>Кузовные детали</h3>
+        <p>Бамперы, крылья, капоты, двери, стёкла</p>
+        <div class="cat-arrow">→</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">⚡</div>
+        <h3>Электрика</h3>
+        <p>Генераторы, стартеры, датчики, провода</p>
+        <div class="cat-arrow">→</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🛢️</div>
+        <h3>Фильтры и масла</h3>
+        <p>Масляные, воздушные, топливные, салонные</p>
+        <div class="cat-arrow">→</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🛑</div>
+        <h3>Тормозная система</h3>
+        <p>Диски, колодки, суппорты, шланги, цилиндры</p>
+        <div class="cat-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-label">Отзывы</div>
+    <h2>Что говорят клиенты</h2>
+    <p class="section-sub">Нам доверяют сотни владельцев автомобилей по всему Казахстану.</p>
+    <div class="reviews-grid fade-up">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Заказывал стойки амортизатора на Toyota Camry. Менеджер быстро подобрал нужные по VIN, цена вышла почти в два раза дешевле, чем в магазинах Алматы. Запчасти пришли за 10 дней, всё отлично встало. Буду брать ещё!</p>
+        <div class="review-author">
+          <div class="review-avatar">А</div>
+          <div>
+            <div class="review-name">Асет Жаксыбеков</div>
+            <div class="review-city">Алматы</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">Брала бампер на Hyundai Tucson. Сначала сомневалась — Китай всё-таки, но качество реально удивило. Покрасила — не отличить от оригинала. Менеджер был очень терпелив, всё объяснил. Рекомендую без сомнений.</p>
+        <div class="review-author">
+          <div class="review-avatar">Д</div>
+          <div>
+            <div class="review-name">Динара Сейткали</div>
+            <div class="review-city">Нур-Султан</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">Сотрудничаем уже второй год — берём запчасти для нашего автосервиса. Цены на 35–40% ниже официальных поставщиков, качество стабильное. Один раз была небольшая задержка доставки, но предупредили заранее. В целом — отличные партнёры.</p>
+        <div class="review-author">
+          <div class="review-avatar">Р</div>
+          <div>
+            <div class="review-name">Руслан Байтасов</div>
+            <div class="review-city">Шымкент</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="container" style="text-align:center">
+    
+<div class="contacts-box fade-up">
+  <div class="contacts-title">Оставьте заявку</div>
+  <div class="contacts-sub">Заполните форму — откроется WhatsApp с готовым текстом</div>
+
+  <form class="form" id="leadForm" novalidate>
+    <div class="form-grid">
+      <label>
+        <span>Имя</span>
+        <input type="text" name="name" placeholder="Аслан" required />
+      </label>
+
+      <label>
+        <span>VIN</span>
+        <input type="text" name="vin" placeholder="JHMCM56557C404453" required />
+      </label>
+
+      <label>
+        <span>Марка</span>
+        <input type="text" name="brand" placeholder="Toyota" required />
+      </label>
+
+      <label>
+        <span>Модель</span>
+        <input type="text" name="model" placeholder="Camry" required />
+      </label>
+
+      <label>
+        <span>Год</span>
+        <input type="number" name="year" placeholder="2018" required />
+      </label>
+    </div>
+
+    <label class="form__full">
+      <span>Нужные запчасти</span>
+      <textarea name="parts" rows="4" placeholder="бампер, фара..." required></textarea>
+    </label>
+
+    <button type="submit" class="btn btn--primary">
+      Отправить заявку
+    </button>
+
+    <p class="form__note">
+      Мы автоматически сформируем сообщение в WhatsApp
+    </p>
+  </form>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <img style="height: 70px;" src="image/logo.png" alt="Весь Китай">
+      </a>
+      <p class="footer-desc">Автозапчасти из Китая — прямые поставки, низкие цены, гарантия качества. Работаем по всему Казахстану с 2017 года.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <a href="#about">О компании</a>
+      <a href="#how">Как заказать</a>
+      <a href="#advantages">Преимущества</a>
+      <a href="#categories">Каталог</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+    <div class="footer-col">
+      <h4>Правовые документы</h4>
+      <a onclick="openModal('terms')">Пользовательское соглашение</a>
+      <a onclick="openModal('cookie')">Политика Cookie</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Весь Китай. Все права защищены.</span>
+  </div>
+</footer>
+
+<!-- MODAL: TERMS -->
+<div class="modal-overlay" id="modal-terms">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('terms')">✕</button>
+    <h3>Пользовательское соглашение</h3>
+    <p>Настоящее Пользовательское соглашение регулирует использование сайта vesykitay.kz.</p>
+    <p><strong>1. Сбор персональных данных</strong></p>
+    <p>Данный сайт не собирает, не хранит и не обрабатывает персональные данные пользователей. На сайте отсутствуют формы регистрации, формы обратной связи и любые другие инструменты сбора персональных данных.</p>
+    <p><strong>2. Взаимодействие с пользователями</strong></p>
+    <p>Общение с клиентами осуществляется исключительно через сторонние мессенджеры (WhatsApp, Telegram) и телефон. Условия обработки данных в данных сервисах регулируются их собственными политиками конфиденциальности.</p>
+    <p><strong>3. Использование сайта</strong></p>
+    <p>Сайт предназначен исключительно для информирования о товарах и услугах компании «Весь Китай». Все представленные материалы носят ознакомительный характер.</p>
+    <p><strong>4. Изменения соглашения</strong></p>
+    <p>Компания оставляет за собой право вносить изменения в настоящее соглашение без предварительного уведомления. Актуальная версия всегда доступна на сайте.</p>
+    <p>По всем вопросам: info@vesykitay.kz</p>
+  </div>
+</div>
+
+<!-- MODAL: COOKIE -->
+<div class="modal-overlay" id="modal-cookie">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('cookie')">✕</button>
+    <h3>Политика Cookie</h3>
+    <p>Настоящая политика описывает использование файлов cookie на сайте vesykitay.kz.</p>
+    <p><strong>Что такое cookie?</strong></p>
+    <p>Cookie — это небольшие текстовые файлы, которые сохраняются на вашем устройстве при посещении сайта.</p>
+    <p><strong>Используемые сервисы аналитики</strong></p>
+    <p>На сайте подключена система веб-аналитики <strong>Яндекс.Метрика</strong>. Сервис собирает обезличенную статистику посещений для анализа трафика и улучшения сайта. Яндекс.Метрика использует собственные cookie-файлы.</p>
+    <p>Подробнее о политике конфиденциальности Яндекс.Метрики можно узнать на сайте Яндекса.</p>
+    <p><strong>Управление cookie</strong></p>
+    <p>Вы можете отключить cookie в настройках браузера. Это не повлияет на доступность сайта, однако статистика вашего посещения не будет учтена.</p>
+    <p><strong>Согласие</strong></p>
+    <p>Продолжая использование сайта, вы соглашаетесь на использование cookie в соответствии с настоящей политикой.</p>
+    <p>По вопросам: info@vesykitay.kz</p>
+  </div>
+</div>
+
+<!-- COOKIE BAR -->
+<div class="cookie-bar" id="cookieBar">
+  <div class="cookie-text">
+    Мы используем cookie для аналитики (Яндекс.Метрика). Подробнее — в <a onclick="openModal('cookie')">Политике Cookie</a>.
+  </div>
+  <button class="btn-cookie" onclick="acceptCookie()">Принять</button>
+</div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // Mobile nav
+  function toggleMenu(){
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+
+  // Modals
+  function openModal(id){
+    document.getElementById('modal-'+id).classList.add('active');
+    document.body.style.overflow='hidden';
+  }
+  function closeModal(id){
+    document.getElementById('modal-'+id).classList.remove('active');
+    document.body.style.overflow='';
+  }
+  document.querySelectorAll('.modal-overlay').forEach(o=>{
+    o.addEventListener('click', e=>{ if(e.target===o){ o.classList.remove('active'); document.body.style.overflow=''; } });
+  });
+
+  // Cookie
+  if(localStorage.getItem('cookieAccepted')){
+    document.getElementById('cookieBar').classList.add('hidden');
+  }
+  function acceptCookie(){
+    localStorage.setItem('cookieAccepted','1');
+    document.getElementById('cookieBar').classList.add('hidden');
+  }
+
+  // Scroll top
+  window.addEventListener('scroll',()=>{
+    const btn=document.getElementById('scrollTop');
+    if(window.scrollY>400){ btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  });
+
+  // Intersection Observer for fade-up
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+  },{ threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+</script>
+
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+
+  const data = {
+    name: form.name.value,
+    vin: form.vin.value,
+    brand: form.brand.value,
+    model: form.model.value,
+    year: form.year.value,
+    parts: form.parts.value
+  };
+
+  const message =
+`Пишу вам с сайта:
+
+Меня зовут ${data.name}
+VIN: ${data.vin}
+Марка: ${data.brand}
+Модель: ${data.model}
+Год: ${data.year}
+
+Нужные запчасти:
+${data.parts}`;
+
+  const phone = "77770070014";
+
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, '_blank');
+});
+</script>
+
+</body>
+</html>
